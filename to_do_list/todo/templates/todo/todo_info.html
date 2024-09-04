@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ todo.title }}</title>
+</head>
+<body>
+    <h1>{{ todo.title }}</h1>
+    <hr>
+    <p>작성일: {{ todo.created_at }}</p>
+    <p>수정일: {{ todo.updated_at }}</p>
+    <p>내용: {{ todo.description }}</p>
+    <a href="{% url 'todo_list' %}">목록으로 돌아가기</a>
+</body>
+</html>

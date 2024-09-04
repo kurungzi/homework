@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <ul>
+        {% for todo in todos %}
+            <li><a href="{% url 'todo_info' todo.id %}">{{ todo.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
